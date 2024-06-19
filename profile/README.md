@@ -4,4 +4,12 @@
     </a>
 </p>
 
+<hr>
+
+### Latest from the blog
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+[:book: Check our blog for more!](https://blog.infocyph.com/)
+
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=infocyph.com)
