@@ -1,10 +1,10 @@
 name: Weekly codeowners cleanup
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * 4'
+#on:
+#  push:
+#    branches: [ main ]
+#  workflow_dispatch:
+#  schedule:
+#    - cron: '0 0 * * 4'
 
 permissions:
   contents: read
