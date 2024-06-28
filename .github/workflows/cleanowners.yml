@@ -1,0 +1,25 @@
+name: Weekly codeowners cleanup
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 4'
+
+permissions:
+  contents: read
+
+jobs:
+  cleanowners:
+    name: cleanowners
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Run cleanowners action
+        uses: github/cleanowners@v1
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          ORGANIZATION: "infocyph"
+          EXEMPT_REPOS: "infocyph/.github, infocyph/.github-private, infocyph/infocyph.github.io, infocyph/demo-repository"
